@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventy.co</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="eventy-logo.png" alt="Eventy.co Logo" class="logo">
+        <h1>Eventy.co</h1>
+    </header>        
+    <main>
+        <section class="about-us hidden">
+            <h2>About Us</h2>
+            <p>Eventy.co offers a curated collection of custom Instagram filters designed to elevate the visual branding and aesthetic of events and celebrations. Their filters allow event hosts and attendees to seamlessly integrate a cohesive visual theme across social media platforms, with a variety of styles from elegant and romantic to modern and minimalist. Each filter is meticulously crafted to enhance photos and videos, transforming ordinary moments into shareable, on-brand content that helps create a polished, professional look and feel that resonates with guests. The filters are easy to apply and can be used by anyone with an Instagram account, providing a simple way for event attendees to get in on the branding action and foster a sense of community around the occasion.</p>
+        </section>
+        <section class="our-instagram-filters hidden">
+            <h2>Our Instagram Filters</h2>
+        </section>
+        <section class="instagram-filters">
+            <div class="filters">
+                <div class="filter hidden">
+                    <video class="filter-video" data-video="filter1.mp4" data-link="https://www.instagram.com/ar/553698160301790">
+                        <source src="filter1.mp4" type="video/mp4">
+                    </video>
+                    <h2>White Package</h2>
+                    <p>1 Design, Preset, Retouching + Beauty</p>
+                    <p class="price">Rp125.000</p>
+                </div>
+                <div class="filter hidden">
+                    <video class="filter-video" data-video="filter2.mp4" data-link="https://www.instagram.com/ar/1208123679906497">
+                        <source src="filter2.mp4" type="video/mp4">
+                    </video>
+                    <h2>Bronze Package</h2>
+                    <p>1 Design, Existing Media, Preset, Retouching + Beauty</p>
+                    <p class="price">Rp150.000</p>
+                </div>
+                <div class="filter hidden">
+                    <video class="filter-video" data-video="filter3.mp4" data-link="https://www.instagram.com/ar/276779948172056/?ch=MjhkN2ZkODFlM2VhODg5ZDhkZGNmNjc2NWRiOGI2YjI%3D">
+                        <source src="filter3.mp4" type="video/mp4">
+                    </video>
+                    <h2>Silver Package</h2>
+                    <p>1 Design, UI Picker Blink, Preset, Retouching + Beauty</p>
+                    <p class="price">Rp175.000</p>
+                </div>
+                <div class="filter hidden">
+                    <video class="filter-video" data-video="filter4.mp4" data-link="https://www.instagram.com/ar/3440686669502386">
+                        <source src="filter4.mp4" type="video/mp4">
+                    </video>
+                    <h2>Gold Package</h2>
+                    <p>1 Design, 2 Music, Preset, Retouching + Beauty</p>
+                    <p class="price">Rp200.000</p>
+                </div>
+                <div class="filter hidden">
+                    <video class="filter-video" data-video="filter5.mp4" data-link="https://www.instagram.com/ar/759427602326013/?ch=MmFjMzgzYjEzYjEzNzk2YTJjZjVjZTBhOWRhOWMyNjU%3D">
+                        <source src="filter5.mp4" type="video/mp4">
+                    </video>
+                    <h2>Platinum Package</h2>
+                    <p>2 Design Tap, 1 Music, UI Picker Blink, Preset, Retouching + Beauty</p>
+                    <p class="price">Rp250.000</p>
+                </div>
+                <div class="filter hidden">
+                    <video class="filter-video" data-video="filter6.mp4" data-link="https://www.instagram.com/ar/641251081385883">
+                        <source src="filter6.mp4" type="video/mp4">
+                    </video>
+                    <h2>Diamond Package</h2>
+                    <p>3 Design UI Picker, 1 Music, Blink, Preset, Retouching + Beauty</p>
+                    <p class="price">Rp295.000</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us:</p>
+        <div class="contact-icons">
+            <a href="https://www.instagram.com/eventy.co/" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram" class="icon">
+                <span>@eventy.co</span>
+            </a>
+            <a href="https://wa.me/6281216382954" target="_blank">
+                <img src="whatsapp-icon.png" alt="WhatsApp" class="icon">
+                <span>Admin Eventy.co</span>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <video id="popup-video" autoplay loop>
+                <source src="" type="video/mp4">
+            </video>
+            <a id="popup-link" href="#" target="_blank" class="popup-link">Preview Filter</a>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

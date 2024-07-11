@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dee9ef;
+}
+
+header {
+    background-color: #0d6089;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Mengatur elemen secara vertikal */
+    align-items: center;
+    font-family: 'Times', 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+
+}
+
+.logo {
+    width: 80px; /* Sesuaikan ukuran logo */
+    height: auto;
+    margin-bottom: 0px; /* Kurangi jarak antara logo dan teks */
+}
+
+header h1 {
+    margin-top: 0px; /* Kurangi jarak antara logo dan teks */
+}
+
+main {
+    padding: 20px;
+}
+
+.about-us {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Times', 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+}
+
+.about-us p {
+    text-align: center;
+    font-size: 1em;
+}
+
+.our-instagram-filters {
+    margin-bottom: 20px;
+    padding: 1px;
+    color: white;
+    background-color: #0d6089;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Times', 'Times New Roman', Times, serif;
+}
+
+.instagram-filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.filter {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.filter h2 {
+    font-family: 'Times', 'Times New Roman', Times, serif; /* Mengubah gaya font */
+    font-size: 1.3em; /* Ukuran font lebih besar */
+    color: black; /* Warna font */
+    margin: 10px 0;
+}
+
+.filter p {
+    font-family: 'Times', Times; /* Mengubah gaya font */
+    font-size: 1.1em; /* Ukuran font */
+}
+
+.filter video {
+    border-radius: 8px;
+    max-width: 100%;
+    max-height: 200px;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+}
+
+.price {
+    font-size: 1.5em;
+    color: red;
+    font-weight: bold;
+    font-family: 'Times', 'Times New Roman', Times, serif;
+}
+
+footer {
+    background-color: #0d6089;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.2em; /* Ukuran font untuk teks "Contact us" */
+    margin: 10px;
+    font-family: 'Times', 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Menambahkan jarak antara elemen */
+    font-family: 'Times', 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+.contact-icons .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+}
+
+.contact-icons a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-icons span {
+    margin-left: 5px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    margin: 5% auto;
+    padding: 20px; /* Padding dengan warna background */
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.popup-content video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.popup-link {
+    display: block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #0d6089;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Times', 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
